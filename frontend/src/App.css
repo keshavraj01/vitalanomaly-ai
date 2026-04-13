@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f7fa;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.upload-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #00ffd5;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* button:hover {
+  background-color: #00ffd5;
+} */
+
+/* .button {
+  padding: 12px 25px;
+  border: 1px solid #aaa;
+  background: transparent;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+} */
+
+/* .secondary-btn:hover {
+  border-color: #00ffd5;
+  color: #00ffd5;
+} */
+
+/* .button :hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #00ffd5;
+} */
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.summary-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.summary-item {
+  flex: 1;
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.graph img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+h2 {
+  color: #34495e;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+.summary-item p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, #0b1220, #1e2a47);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header button {
+  background: linear-gradient(135deg, #00ffd5, #00c2ff);
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.header button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #00ffd5;
+}
+.results-section {
+  padding: 40px;
+}
