@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+scipy
+jupyter
+tensorflow
+fastapi
+uvicorn
+python-multipart
+typing-extensions>=4.8.0
+ipykernel
+joblib
