@@ -8,6 +8,8 @@ from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 import numpy as np
 import io
+import os
+import uvicorn
 
 # 🔥 NEW IMPORTS (IMPORTANT)
 import matplotlib.pyplot as plt
@@ -230,5 +232,5 @@ async def upload_file(file: UploadFile = File(...)):
 if __name__ == "__main__":
     import uvicorn
     # uvicorn.run("main:app", host="0.0.0.0", port=8000)
-    uvicorn.run(app, host="0.0.0.0", port=8000)
-
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
