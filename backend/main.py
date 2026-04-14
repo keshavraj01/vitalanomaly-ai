@@ -235,6 +235,13 @@ async def upload_file(file: UploadFile = File(...)):
 def root():
     return {"message": "API is running 🚀"}
 
+@app.get("/")
+def home():
+    return {"status": "ok", "message": "VitalAnomaly AI backend running 🚀"}
+
+@app.get("/health")
+def health():
+    return {"health": "good"}
 # import os
 
 # if __name__ == "__main__":
