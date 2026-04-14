@@ -15,6 +15,9 @@ import matplotlib.pyplot as plt
 import base64
 from io import BytesIO
 
+import os
+print("PORT:", os.environ.get("PORT"))
+
 app = FastAPI()
 
 app.add_middleware(
@@ -227,6 +230,10 @@ async def upload_file(file: UploadFile = File(...)):
         "health_summary": dict(Counter(labels)),
         "plots": plots
     }
+
+@app.get("/")
+def root():
+    return {"message": "API is running 🚀"}
 
 # import os
 
